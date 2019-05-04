@@ -1,0 +1,3 @@
+ - add tool tip to social buttons
+ - add contact to hamburger menu
+ - check scroll in code on mobile
