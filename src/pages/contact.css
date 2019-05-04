@@ -1,0 +1,61 @@
+.contact-container{
+    display: flex;
+    flex-direction: row;
+	flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    height: 100px;
+    width: 40vh;
+    margin: auto;
+}
+@media all and (min-width:0px) and (max-width: 415px) {
+    .contact-container{
+        width: 40vh;
+    }
+}
+@media all and (min-width:416px) and (max-width: 900px) {
+    .contact-container{
+        width: 70vh;
+    }
+}
+
+.contact-app-container{
+    padding: 1em;
+    border-top: solid 1em #921;
+}
+
+.contact-app{
+    cursor: pointer;
+    padding-top: 10px;
+    font-size: 4em;
+    width: 100px;
+    text-align: center;
+}
+
+.border-bottom{
+    border-bottom: 1px solid black;
+}
+
+.border-right{
+    border-right: 1px solid black;
+}
+
+.fb{
+    color: #3b5999
+}
+.twitter{
+    color: #55acee
+}
+.linkedIn{
+    color: #0077B5
+}
+.stackO{
+    background-image: url("../static/so-icon.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.github{
+    color:#3a3a3a;
+    text-decoration: none;
+}

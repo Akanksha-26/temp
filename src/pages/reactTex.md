@@ -1,0 +1,71 @@
+---
+title: "React-Tex"
+subTitle: "A react component to display Latex Text like formulaes"
+date: "2017-07-05"
+tags: ["reactjs", "frontend"]
+path: "/reactTex/"
+published: true
+---
+
+## Install
+
+```sh
+$ npm install --save react-tex
+```
+
+## Using
+
+1.In your component
+```js
+import {Tex} from 'react-tex';
+
+class TexWrapper extends Component{
+  render(){
+    let latexString = "\int_{a}^{b} f(x)dx = F(b) - F(a)";
+    return(
+      <div>
+        <Tex texContent={latexString}/>
+      </div>
+    )
+  }
+}
+```
+Output:![tex](https://cloud.githubusercontent.com/assets/17777371/24044786/bd8233ce-0b42-11e7-9a48-4abf6d90ed0e.png)
+
+Available props for Tex are:
+
+- `texContent`: `string`. Latex string . (default: ``)
+
+For Inline component wrap the latex string in between $$
+```js
+import {InlineTex} from 'react-tex';
+
+class InlineTexWrapper extends Component{
+  render(){
+    let latexString = "This is inline $$\int_{a}^{b} f(x)dx = F(b) - F(a)$$ latex string";
+    return(
+      <div>
+        <InlineTex texContent={latexString}/>
+      </div>
+    )
+  }
+}
+```
+Output:![inlinetex](https://cloud.githubusercontent.com/assets/17777371/24044794/c554ccf6-0b42-11e7-8b06-9718fb0d19d3.png)
+
+Available props for InlineTex are:
+
+- `texContent`: `string`. Latex string . (default: ``)
+- `texSeperator`: `string`. Latex string seperator using regex . (default: `${2}`)
+
+2. Include Katex CSS in your html
+
+```html
+
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.css">
+    </head>
+</html>
+
+```

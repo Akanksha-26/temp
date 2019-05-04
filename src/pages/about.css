@@ -1,0 +1,160 @@
+.masthead-heading,
+.masthead-intro,
+#avatar {
+  text-align: center;
+}
+
+.masthead {
+    padding: 1em 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top: solid 1em #FFCF33;
+}
+  
+.masthead-intro {
+    /* Layout Declarations */
+    margin-bottom: 1em;
+    /* Typography Declarations */
+    font-family: "Gentium Book Basic", Georgia, serif;
+    font-size: 2em;
+}
+  
+.masthead-heading {
+    /* Layout Declarations */
+    color: #F1C863;
+    margin-top: -0.2em;
+    /* Typography Declarations */
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: bold;
+    font-size: 4em;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+.avatar-header{
+    padding: 1em;
+}
+.avatar {
+    margin: auto;
+    /* This image is 687 wide by 1024 tall, similar to your aspect ratio */
+    background-image: url('https://user-images.githubusercontent.com/17777371/38592823-e8836ef2-3d5b-11e8-99fa-2b5b9c7f48af.jpg');
+    
+    /* make a square container */
+    width: 150px;
+    height: 150px;
+
+    /* fill the container, preserving aspect ratio, and cropping to fit */
+    background-size: cover;
+
+    /* center the image vertically and horizontally */
+    background-position: top center;
+
+    /* round the edges to a circle with border radius 1/2 container size */
+    border-radius: 50%;
+}
+.avatar-img{
+    margin-left: 55%;
+    height: 20px;
+}
+@media all and (min-width:0px) and (max-width: 400px) {
+    .avatar-img{
+        margin-left: 70%;
+    }
+}
+@media all and (min-width:400px) and (max-width: 600px) {
+    .avatar-img{
+        margin-left: 67%;
+    }
+}
+@media all and (min-width:600px) and (max-width: 800px) {
+    .avatar-img{
+        margin-left: 62%;
+    }
+}
+@media all and (min-width:800px) and (max-width: 1000px) {
+    .avatar-img{
+        margin-left: 60%;
+    }
+}
+
+.about-me{
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    margin: 4vh;
+    padding: 10px;
+}
+.about-me-free-time-list{
+    list-style: none
+}
+.about-me-free-time-list > li::before {
+    font-size: 2em;
+    content: "\25AA"; 
+    color: #1976D2;
+    width: 1em;
+    /* margin-left: -1em; */
+    margin-right: 10px;
+}
+.about-me-free-time-list > li > span {
+    font-size: 1em;
+}
+
+
+.skill-container {
+    flex: 1;
+    color:white;
+    background-color: #34495e;
+    padding: 1em;
+    margin: 1em;
+}
+.skill-list {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%; /* Full width */
+}
+
+.skills-span{
+    flex:0.2;
+}
+@media all and (min-width:0px) and (max-width: 320px) {
+    .skills-span{
+        flex:0.48;
+    }
+    .skills {
+        flex:0.52;
+    }
+}
+@media all and (min-width:321px) and (max-width: 450px) {
+    .skills-span{
+        flex:0.4;
+    }
+    .skills {
+        flex:0.6;
+    }
+}
+
+.skills-score{
+    height: 100%;
+}
+.skills {
+    flex:0.8;
+    height: 15px;
+    color: white; /* White text color */
+}
+
+.js {width: 85%; background-color: #AED581;} 
+.reactjs {width: 80%; background-color: #DCE775} 
+.node {width: 90%; background-color: #FFF176;} /* Green */
+.loopback {width: 90%; background-color: #FFD54F;} 
+.html {width: 70%; background-color: #FFB74D;} 
+.css {width: 60%; background-color: #FF8A65;}
+
+.free-time-container{
+    flex: 1;
+    padding: 1em;
+}
+
+.sill-free-time-container{
+    display: flex;
+    flex-wrap: wrap;
+}
